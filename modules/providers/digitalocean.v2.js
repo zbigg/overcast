@@ -250,7 +250,7 @@ exports.getAPI = function () {
     return utils.die('overcast var set DIGITALOCEAN_API_TOKEN [your_api_token]');
   }
 
-  exports.API = new DigitalOcean(variables.DIGITALOCEAN_API_TOKEN);
+  exports.API = new DigitalOcean(variables.DIGITALOCEAN_API_TOKEN, 100);
 
   return exports.API;
 };
